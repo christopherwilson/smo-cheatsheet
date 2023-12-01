@@ -1,4 +1,5 @@
-\wt{2.4.1 Chapman-Kolmogorov Equations} $p^{(n+m)}_{ij} = \sum_{k \in S}p^{(n)}_{ik}p^{(m)}_{kj}$. Defining $p^(n)$ to be the matrix with $p^{(n)}_{ij}$ as the entry in the $i$th row and $j$th column, in matrix form we get $p^{(n+m)} = p^{(n)}p^{(m)}.$
+\wde{$n$-Step Trans. Prob. 2.4.X} Let $p^{(n)}_{ij} \equiv P(X_n = j|X_0 = i) = P(X_{m+n} = j | X_m = i)$ be the probability of being in state $j$ after $n$ transitions starting at state $i$.
+\wt{Chapman-Kolmogorov Equations 2.4.1} $p^{(n+m)}_{ij} = \sum_{k \in S}p^{(n)}_{ik}p^{(m)}_{kj}$. Defining $p^{(n)}$ to be the matrix with $p^{(n)}_{ij}$ as the entry in the $i$th row and $j$th column, in matrix form we get $p^{(n+m)} = p^{(n)}p^{(m)}.$
 \wc{2.4.2} If $P^n$ is defined to be the $n$-th power of matrix $P$, then $P^{(n)} = P^n$.
-\wde{2.4 Distribution} Let a DTMC have $N$ states and let $a^{(n)} = (a^{(n)}_1, a^{(n)}_2, \ldots, a^{(n)}_N)$ be a row vector, where $a^{(n)}_i = P(X_n = i)$. Then $a^{(n+1)} = a^{(n)}P = a^{(0)}P^n$. $a^{(0)}$ is the initial distribution of the state space.
+\wde{Distribution 2.4.X} Let a DTMC have $N$ states and let $a^{(n)} = (a^{(n)}_1, a^{(n)}_2, \ldots, a^{(n)}_N)$ be a row vector, where $a^{(n)}_i = P(X_n = i)$. Then $a^{(n+1)} = a^{(n)}P = a^{(0)}P^n$. $a^{(0)}$ is the initial distribution of the state space.
 \wt{2.4.7} One-step transition matrix $P$ and the initial distribution $a^{(0)}$ completely characterises the DTMC, that is all finite dimensional probabilities can be calculated.

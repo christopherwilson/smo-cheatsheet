@@ -1,7 +1,7 @@
-\wde{2.7.X Positive and Null Recurrence} Define $m_{ij} = E(T_j|X_0 = i)$, so $m_{ii}$ is the mean time to return to a state $i$. A recurrent state $i$ is positive recurrent when $m_{ii} < \infty$, and null recurrent when $m_{ii} = \infty$.
-\wde{2.7.X $p^*_{ij}$} We define the long run average probability of being at state $j$ starting at state $i$ as $p^*_{ij} = \lim_{N \to \infty} \frac{1}{N+1}\sum^N_{n=0} p^{(n)}_{ij}$.
+\wde{Positive and Null Recurrence 2.7.X} Define $m_{ij} = E(T_j|X_0 = i)$, so $m_{ii}$ is the mean time to return to a state $i$. A recurrent state $i$ is positive recurrent when $m_{ii} < \infty$, and null recurrent when $m_{ii} = \infty$.
+\wde{$p^*_{ij}$ 2.7.X} We define the long run average probability of being at state $j$ starting at state $i$ as $p^*_{ij} = \lim_{N \to \infty} \frac{1}{N+1}\sum^N_{n=0} p^{(n)}_{ij}$.
 \wt{2.7.1} A recurrent state $i$ is positive recurrent if and only if $p^{*}_{ii} = 1/m_{ii} > 0$.
 \wl{2.7.2} $\lim_{N \to \infty} \frac{1}{N+1}\sum^N_{n=0} f_n =  \lim_{N \to \infty} \frac{1}{N+1}\sum^N_{n=0 f_{n+m}}$, for any $(f_n)_{n \in \mathbb{N}}$ sequence which is bounded $|f_n| \le b\ \forall\ n$, and for any $m \in \mathbb{N}$.
 \wt{2.7.3} Positive recurrence and null recurrence are class properties, that is if recurrent states $i \comn j$ then $i$ and $j$ are both positive recurrent or both null recurrent.
-\wt{2.7.4} All states in a finite communicating class $C$ are positive recurrent.
+\wt{2.7.4} All states in a finite closed communicating class $C$ are positive recurrent.
 \wt{2.7.5} All states in an open communicating class $C$ are transient.

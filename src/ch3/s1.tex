@@ -1,5 +1,9 @@
-\wde{3.1.1 Exponential RV} A continuous random variable $X$ is called exponential with rate $\lambda$ if its cumulative distribution function is $P(X \le x) = F(x) = 1-e^{-\lambda x}$. Consequently, its density is $f(x) = \lambda e^{-\lambda x}$ both for $x \le 0$, and zero otherwise.
+\wde{Exponential RV 3.1.1} A continuous random variable $X$ is called exponential with rate $\lambda$ if its cumulative distribution function is $P(X \le x) = F(x) = 1-e^{-\lambda x}$. Consequently, its density is $f(x) = \lambda e^{-\lambda x}$ both for $x \le 0$, and zero otherwise.
 \wt{3.1.2} The $r$-th moment of the exponential random variable with rate $\lambda$ is given by $E(X^r) = r!/\lambda^r$.
+\wde{Memoryless Property 3.1.X} A random variable $X$ has the memoryless property if 
+$P(X > s + t | X> s) = P(X > t)$.
 \wt{3.1.3} The only continuous non-negative random variable with memoryless property is the exponential.
-\wt{3.1.4} If $X_2$ is an exponential random variable with rate $\lambda$ and $X_1$ is an independent non-negative continuous random variable, then for any $x \le 0$, $P(X_2 > X_1 +x|X_2 > X_1) = P(X > x) = e^{-\lambda x}$.
-\wt{3.1.5} If $Z = X_1 + X_2 + \ldots + X_n$, where $X_i \sim \exp(\lambda)$ for all $i$ and independent, then $Z$ is called the gamma $(n, \lambda)$ random variable and its density function is given by $f_n(z) = \lambda e^{-\lambda z} \frac{(\lambda z)^{n-1}}{(n-1)!}$.
+\wt{3.1.X} The minimum of $k$ independent exponentials is again exponential with rate $\sum_j \lambda_j$, and the event that the minimum exponential is the $i$-th exponential is independent with probability $\lambda_i/\sum_j\lambda_j$.
+\wt{Strong Memoryless Property 3.1.4} If $X_2$ is an exponential random variable with rate $\lambda$ and $X_1$ is an independent non-negative continuous random variable, then for any $x \le 0$, $P(X_2 > X_1 +x|X_2 > X_1) = P(X > x) = e^{-\lambda x}$.
+\wt{3.1.5} If $Z = X_1 + X_2 + \ldots + X_n$, where $X_i \sim \exp(\lambda)$ for all $i$ and independent, then $Z$ is called the gamma $(n, \lambda)$ random variable and its density function is given by $f_n(z) = \lambda e^{-\lambda z} \frac{(\lambda z)^{n-1}}{(n-1)!}$. The cumulative distribution is 
+$P(Z \le t) = 1 - \sum^{n-1}_{r=0} e^{-\lambda t} \frac{(\lambda t)^r}{r!}$.
