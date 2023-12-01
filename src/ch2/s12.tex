@@ -1,8 +1,8 @@
-\wde{Cost} Let each state $j$ have a cost $c(j)$, then at step $n$ we incur a cost of $c(X_n)$.
-\wde{Long Run Avg. Cost} The long run average cost starting from state $i$ is 
+\wde{Cost 2.12.X} Let each state $j$ have a cost $c(j)$, then at step $n$ we incur a cost of $c(X_n)$.
+\wde{Long Run Avg. Cost 2.12.X} The long run average cost starting from state $i$ is 
 $\psi_i = \lim_{N \to \infty} E\left(\bigr(\ ^1/_{N+1}\bigl) \sum^N_{n = 0} c(X_n) \big| X_0 = i\right).$
-\wde{Cost in Pos. Reccurence} Suppose $c(i) \le B < \infty$ and the DTMC is irreducible and positive recurrent, then $\psi_i = \sum_{j \in S} c(j) \pi_j$.
-\wde{Cost in Aperiodic} The long run mean cost of an aperiodic chain is 
+\wde{Cost in Pos. Reccurence 2.12.X} Suppose $c(i) \le B < \infty$ and the DTMC is irreducible and positive recurrent, then $\psi_i = \sum_{j \in S} c(j) \pi_j$.
+\wde{Cost in Aperiodic 2.12.X} The long run mean cost of an aperiodic chain is 
 $\lim_{n \to \infty} E(c(X_n)|X_0 = i) = \sum_{j \in S} c(j)\pi_j$. 
-\wde{Cost in Transience} Suppose only transient states have nonzero cost. Then the total cost is $\sum^{\infty}_{n = 0} c(X_n)$. Let $\phi_i$ be the total expected cost if we start at state $X_0 = i$. Then 
+\wde{Cost in Transience 2.12.X} Suppose only transient states have nonzero cost. Then the total cost is $\sum^{\infty}_{n = 0} c(X_n)$. Let $\phi_i$ be the total expected cost if we start at state $X_0 = i$. Then 
 $\phi_i = c(i) + \sum_{j \in S} p_{ij}\phi_j$.

@@ -1,6 +1,10 @@
-\wde{2.6.1 Recurrent \& Transient} Define $T_j = \min\{n \ge 1 : X_n = j\}$, and $\varrho_{ij} = P(T_j < \infty|X_0 = i) = \sum^\infty_{n=1}P(T_j = n| X_0 = i)$. A state $i$ is said to be recurrent if $\varrho_{ii} = 1$ and it said to be transient if $\varrho_{ii} < 1$.
-\wl{2.6.2} Let $N_i$ be the number of visits to state $i$ (including the starting visit). Then $N_i$ is infinite if $i$ is recurrent, while $N_i$ is a geometric $(1- \varrho_{ii})$ random variable if $i$ is transient. Consequently $P(N_i = \infty|X_0 = i) = 1$ if $i$ is recurrent and $= 0$ if $i$ is transient, and the mean number of visits to $i$ is $E(N_i|X_0 = i) = \infty$ if $i$ is recurrent, and $= 1/(1-\varrho_{ii})$ if $i$ is transient.
+\wde{Prob. of Arrival} Define $T_j = \min\{n \ge 1 : X_n = j\}$ to be the first arrival time to state $j$, and $\varrho_{ij} = P(T_j < \infty|X_0 = i) = \sum^\infty_{n=1}P(T_j = n| X_0 = i)$ be the probability of ever reaching $j$ from $i$.
+\wde{Recurrent \& Transient 2.6.1} A state $i$ is said to be recurrent if $\varrho_{ii} = 1$ and it said to be transient if $\varrho_{ii} < 1$.
+\wl{2.6.2} Let $N_i$ be the number of visits to state $i$ (including the starting visit). Then $N_i$ is infinite if $i$ is recurrent, while $N_i$ is a geometric $(1- \varrho_{ii})$ random variable if $i$ is transient. Consequently $P(N_i = \infty|X_0 = i) = 1$ if $i$ is recurrent and $= 0$ if $i$ is transient, and the mean number of visits to $i$ is $E(N_i|X_0 = i) = \infty$ if $i$ is recurrent, and $=\!^1/_{(1-\varrho_{ii})}$ if $i$ is transient.
 \wt{2.6.3} If $i \to j$ but $\varrho_{ii} < 1$, then $i$ is transient.
-\wc{2.6.4} a) if $i \to j$ and $i$ is recurrent then $\varrho_{ji} = 1$; b) if $i \to j$ and $i$ is recurrent then $j$ is also recurrent; c) if $i \to j$ and $j$ is transient then $i$ is transient too; d) recurrence and transience are class properties.
+\wc{2.6.4} (a) if $i \to j$ and $i$ is recurrent then $\varrho_{ji} = 1$; 
+(b) if $i \to j$ and $i$ is recurrent then $j$ is also recurrent; 
+(c) if $i \to j$ and $j$ is transient then $i$ is transient too; 
+(d) recurrence and transience are class properties.
 \wt{2.6.7} State $i$ is recurrent if and only if $\sum^{\infty}_{n=0} p^{(n)}_{ii} = \infty$.
-\wl{2.6.9 Ratio Test} $\sum^{\infty}_{k=0} a_k$ converges if $\lim_{k\to \infty} a_{k+1}/a_k < 1$, and it diverges if $\lim_{k\to \infty} a_{k+1}/a_k > 1$. If $\lim_{k\to \infty} a_{k+1}/a_k = 1$ the test says nothing.
+\wl{Ratio Test 2.6.9} $\sum^{\infty}_{k=0} a_k$ converges if $\lim_{k\to \infty} a_{k+1}/a_k < 1$, and it diverges if $\lim_{k\to \infty} a_{k+1}/a_k > 1$. If $\lim_{k\to \infty} a_{k+1}/a_k = 1$ the test says nothing.
