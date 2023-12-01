@@ -1,0 +1,5 @@
+\wt{4.6.1} Let $A, B \subset S$, with $A \cap B = \emptyset$ and $P(\min\{\hat{T}_A, \hat{T}_B\} < \infty | X_0 = i) = 1$ for all $i$. Then the probability $h_i = P(\hat{T}_A < \hat{T}_B | X_0 = i)$ of reaching set $A$ before set $B$ when starting from state $i$ satisfies: 
+$h_i = 0$ if $i \in B$; 
+$h_i = 1$ if $i \in A$; 
+$\sum_{j \in S} q_{ij}h_j = 0$ if $i \in S \setminus (A \cup B)$.
+\wt{4.6.2} Let $A \subset S$, such that $P(\hat{T_A} < \infty | X_0 = i) = 1$ for all $i$. Then the mean time $g_i = E(\hat{T_A} | X_0 = i)$ to reach set $A$ when starting from state $i$ satisfies: $g_i = 0$ if $i \in A$; $\sum_{j \in S} q_{ij} g_j = -1$ if $i \in S \setminus A$.

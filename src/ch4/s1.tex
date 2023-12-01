@@ -1,0 +1,7 @@
+\wde{4.1.1 CTMC} The continuous time stochastic process $(X_t)_{t \ge 0}$ is called a Continuous Time Markov Chain (CTMC) if:
+(1) each duration $\tau_n$ is an exponential random variable with rate $g_1 > 0$ which depends only on state $\Tilde{X}_{n-1} = i$ which the process leaves;
+(2) the corresponding (embedded) discrete time process $(\Tilde{X}_n)_{n \in \mathbb{N}}$ is a DTMC with $\Tilde{p}_{ii} = 0$ for all $i$.
+More formally $P(\Tilde{X}_n = j, \tau_n > y| \Tilde{X}_{n-1} = i$, $\tau_{n-1}, \Tilde{X}_{n-2}, \ldots, \Tilde{X}_0) = P(\Tilde{X}_n = j, \tau_n > y | \Tilde{X}_{n-1} = i) = \Tilde{p}_{ij}e^{-q_i y}.$
+\wde{4.1.2 Markov Property} A continuous time process $(X_t)_{t \ge 0}$ has the Markov property if for any $0 \le s_0 < s_1 < \cdots < s_n < s,$ any $t \ge 0,$ and any possible states $i_0, \ldots i_n, i,j$ we have $P(X_{s+t} = j | X_s = i, X_{s_n} = i_n, \ldots, X_{s_0} = i_0) = P(X_{s+t} = j | X_s = i)$.
+\wt{4.1.3} The CTMC $(X_t)_{t \ge 0}$ has Markov property.
+\wde{4.1.7 Generator of CTMC} The rate matrix or the generator $Q$ of the CTMC $(X_t)_{t \ge 0}$ is defined through its elements: $q_{ij} = q_i\Tilde{p}_{ij}$, if $i \ne j$ and $q_{ii} = - q_i = - \sum_{j \in S, j \ne i} q_{ij}$. Here $q_{ij}$ is called the jump rate from $i$ to $j$.

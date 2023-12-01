@@ -1,0 +1,126 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{titlesec}
+\titleformat{\subsection}[runin]{\normalfont\Large\bfseries}{\thesubsection.}{6pt}{}[]
+\titlespacing*{\subsection}
+{0pt}{0pt}{0pt}
+
+
+% Disable warnings
+% chktex-file 1
+
+\input{style.sty}
+\input{defs.tex}
+
+%\fontsize{2}
+
+\begin{document}
+  \begin{multicols}{2}
+    \noindent\subsection*{Preliminaries}
+    %
+    % 1.1 Conditional Probability
+    \input{src/ch1/s1.tex}
+    %
+    % 1.2 Conditional Expectation
+    \input{src/ch1/s2.tex}
+    %
+    % 1.3 Stochastic Process
+    \input{src/ch1/s3.tex}
+    %
+    %
+    %  CHAPTER 2: Discrete Time Markov Chains
+    %
+    \subsection*{Discrete Time Markov Chains}
+    % Basic Definitions
+    \input{src/ch2/s1.tex}
+    %
+    % 2.2 Examples
+    %\input{src/ch2/s2.tex}
+    %
+    % 2.3 More Examples
+    %\input{src/ch2/s3.tex}
+    %
+    % 2.4 Chapman-Kolmogorov equations
+    \input{src/ch2/s4.tex}
+    %
+    % 2.5 Classification of states
+    \input{src/ch2/s5.tex}
+    %
+    % 2.6 Transience and Reccurence
+    \input{src/ch2/s6.tex}
+    %
+    % 2.7 Transience and Reccurence
+    \input{src/ch2/s7.tex}
+    %
+    % 2.8 Periodicity of Chains
+    \input{src/ch2/s8.tex}
+    %
+    % 2.9 Stationary Probabilites: Aperiodic Case
+    \input{src/ch2/s9.tex}
+    %
+    % 2.10 Stationary Probabilites: Periodic Case
+    \input{src/ch2/s10.tex}
+    %
+    % 2.11 First Passage Probabilities and Times
+    \input{src/ch2/s11.tex}
+    %
+    % 2.12 Costs and Rewards
+    \input{src/ch2/s12.tex}
+    %
+    % 2.13 Costs and Rewards
+    \input{src/ch2/s13.tex}
+    %
+    %
+    %  CHAPTER 3: Poisson Processes
+    %
+    \subsection*{Poisson Processes}
+    % 3.1 Exponential Random Variable 
+    \input{src/ch3/s1.tex}
+    %
+    % 3.2 Poisson Processes
+    \input{src/ch3/s2.tex}
+    %
+    % 3.3 Superpositioning and Splitting
+    \input{src/ch3/s3.tex}
+    %
+    % 3.4 Campbell’s Theorem: Uniform Order Statistics
+    \input{src/ch3/s4.tex}
+    %
+    % 3.5 Nonhomogeneous Poisson Process
+    \input{src/ch3/s5.tex}
+    %
+    % 3.6 Compound Poisson Process
+    \input{src/ch3/s6.tex}
+    %
+    %
+    %  CHAPTER 4: Continuous Time Markov Chains
+    %
+    \subsection*{Continuous Time Markov Chains}
+    % 4.1 Basic Definitions 
+    \input{src/ch4/s1.tex}
+    %
+    % 4.2 Chapman-Kolmogorov Equations
+    \input{src/ch4/s2.tex}
+    %
+    % 4.3 Backward and Forward Equations
+    \input{src/ch4/s3.tex}
+    %
+    % 4.4 Transience and Reccurence 
+    \input{src/ch4/s4.tex}
+    %
+    % 4.5 Stationary Probabilities
+    \input{src/ch4/s5.tex}
+    %
+    % 4.5 Stationary Probabilities
+    \input{src/ch4/s5.tex}
+    %
+    % 4.6 First Passage Properties
+    \input{src/ch4/s6.tex}
+    %
+    % 4.7 Costs and Rewards
+    \input{src/ch4/s7.tex}
+    %
+  \end{multicols}
+\end{document}

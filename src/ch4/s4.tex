@@ -1,0 +1,6 @@
+\wde{4.4.2 Transient/Recurrent} Let $T_j = \min\{t \ge \tau_1 : X_t = j\}$, $\rho_{ij} = P(T_j < \infty | X_0 = i)$, $m_{ij} = E(T_j |X_0 = i).$ Then state $i$ is:
+(1) transient if $\rho_{ii} < 1$;
+(2) null recurrent if $\rho_{ii} = 1$ and $m_{ii} = \infty$;
+(3) positive recurrent if $\rho_{ii} = 1$ and $m_{ii} < \infty$.
+\wt{4.4.3} A state $i$ is recurrent if and only if the embedded DTMC is recurrent.
+\wt{4.4.4} Let $(X_t)_{t \ge 0}$ be an irreducible CTMC. Suppose $\Tilde{\pi}$ is a positive solution of $\Tilde{\pi} = \Tilde{\pi}\Tilde{P}$ where $\Tilde{P}$ is the transition matrix of the embedded DTMC. Then the CTMC is positive recurrent if and only if $\sum_{i \in S} \frac{\Tilde{\pi}_i}{q_i} < \infty$.

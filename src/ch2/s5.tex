@@ -1,0 +1,5 @@
+\wde{2.5.1 Accessibility} A state $j$ is said to be accessible from state $i$, denoted $i \to j$, if there exists and $n \ge 0$ such that $p^{(n)}_{ij} > 0$.
+\wde{2.5.2 Communication} Two sates $i$ and $j$ are said to communicate, denoted $i \comn j$, if and only if $i \to j$ and $j \to i$.
+\wt{2.5.3} Communication is an equivalence relation, that is: 1) $i \comn i\ \forall\ i \in S$ (reflexive); 2) If $i \comn j$ then $j \comn i$ (symmetric); 3) If $i \comn j$ and $j \comn k$ then $i \comn k$ (transitive).
+\wde{2.5.4 Communication Class} Let $C$ be a subset of the state space $S$. $C$ is said to be a communicating class if: 1) $i,j \in C$ then $i \comn j$; 2) $i \in C$ and $i \comn j$ then $j \in C$. If in addition to these properties we cannot leave $C$, that is for any $i \in C$ and any $k \notin C$ we have $i \nrightarrow k$, then $C$ is said to be a closed communicating class.
+\wde{2.5.5 (Ir)reducible} A DTMC is said to be irreducible if the state space $S$ is a single (closed) communicating class, and it is called reducible if it is composed of several communicating classes.

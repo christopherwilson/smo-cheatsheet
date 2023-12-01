@@ -1,0 +1,6 @@
+\wde{2.13.1 Reversed process} If $(X_n)_{n\ in \mathbb{N}}$ is a stationary DTMC and we fix an $m$, then the process $(\Tilde{X}_n)_{0 \le n \le m}$ where $\Tilde{X}_n = X_{m-n}$ is called the reversed process of $X$.
+\wt{2.13.2} The reversed process $(\Tilde{X}_n)_{0 \le n \le m}$ is a DTMC with transition probabilities $\Tilde{p}_{ij} = \pi_j p_{ji}/\pi_i$.
+\wde{2.13.3 Reversibility} A stationary DTMC is said to be reversible if the reversed process is stochastically the same as the original process, that is $\Tilde{p}_{ij} = p_{ij}$, which implies $\pi_i p_{ij} = \pi_j p_{ji}$, for all $i,j \in S$. This equation together with $\sum_{i \in S} \pi_i = 1$ are called the detailed balance equations. 
+\wc{2.13.4} If $\pi$ satisfies the detailed balance equations, then it also satisfies the global balance equations.
+\wt{2.13.7} A stationary tree DTMC is reversible.
+\wc{2.13.8} A stationary random walk, that is a positive recurrent random walk in stationary, is reversible.

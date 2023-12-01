@@ -1,0 +1,15 @@
+\wde{3.2.1 Poisson Process} Let $\tau_i$ be independent exponential $(\lambda)$ random variables, $S_0 = 0$, $S_n = \tau_1 + \tau_2 + \ldots + \tau_n$ and $N_t = \max\{n \ge 0\ :\ S_n \le t\}$. Then $(N_t)_{t \in \mathbb{R}_{\ge 0}}$ is a Poisson Process with rate parameter $\lambda$, or briefly $PP(\lambda)$.
+\wt{3.2.2} If $(N_t)_{t \ge 0}$ is a $PP(\lambda)$, then $N_t$ follows a Poisson distribution with rate $\lambda t$ for any $t$, that is $P(N_t = k) = e^{-\lambda t}\frac{(\lambda t)^k}{k!}$.
+\wt{3.2.4} The process $(N^{(s)}_t)_{t \ge 0}$ is a $PP(\lambda)$ and it is independent of $(N_u)_{0 \le u \le s}$.
+\wde{3.2.6} 
+(1) A process $(N_t)_{t \ge 0}$  is said to have stationary increments if $N_{s+t} - N_s$ is identically distributed for all $s$, that is the distribution does not depend on $s$.
+(2) A process $(N_t)_{t \ge 0}$ is said to have independent increments if the increments of the distribution is independent for non-overlapping intervals, that is $N_{s_1 + t_1} - N_{s_1}$ and $N_{s_2 + t_2} -N_{s_2}$ are independent if $(s_1,s_1 + t_1] \cap (s_2,s_2 + t_2] = \emptyset$.
+\wt{3.2.7} $(N_t)_{t \ge 0}$ is a $PP(\lambda)$ if and only if: 
+(1) it has stationary and independent increments; 
+(2) $N_t$ is a Poisson $(\lambda t)$ random variable for all $t$.
+\wde{3.2.8} A function $f(x)$ is said to be a $o(x)$ function, if $\lim_{x \to 0} f(x)/x = 0$.
+\wt{3.2.10} $(N_t)_{t \ge 0}$ is a $PP(\lambda)$ if and only if: 
+(1) it has stationary and independent increments;
+(2) $P(N_h = 0) = 1 -\lambda h +o(h) \qquad$ 
+$P(N_h = 1) = \lambda h + o(h) \qquad$ 
+$P(N_h \ge 2) = o(h)$.

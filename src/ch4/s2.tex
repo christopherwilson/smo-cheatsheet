@@ -1,0 +1,14 @@
+\wde{CTMC Trans. Matrix} The transition matrix $P(t)$ with entries 
+$p_{ij}(t) = P(X_t = j | x_0 = i).$  
+$p_{ij}(t)$ is the probability of being at state $j$ at time $t$, if we started at state $i$ at time $t=0$.
+\wde{CTMC $a^{(0)}$} Let $a^{(0)}$ be a vector, and $a^{(0)}_i := P(X_0 = i)$.
+\wt{4.2.1} The matrix $P(t)$ and the initial distribution $a^{(0)}$ completely characterises the CTMC, that is the probability 
+$P(X_{t_1} = i_1, X_{t_2} = i_2, \ldots, X_{t_k} = i_k)$
+can be assessed by only knowing $P(t)$ and $a^{(0)}$.
+\wt{4.2.2} $P(t)$ has the following properties:
+(1) $p_{ij}(t) \ge 0$;
+(2) $\sum_{j \in S}p_{ij}(t) = 1$ for all $t \ge 0$;
+(3) \textbf{(Chapman-Kolmogorov Equations)} 
+$P(t + s) = P(t)P(s)$, that is $p_{ij}(t+s) = \sum_{k \in S} p_{ik}(t) p_{kj}(s).$
+\wt{4.2.3} $P'(0) = Q$, that is 
+$p'_{ii}(0) = -q_i = q_{ii}, \quad p'_{ij}(0) = q_{ij}\ $ for $i \ne j.$
