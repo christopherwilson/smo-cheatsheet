@@ -24,4 +24,4 @@ jobs:
         with:
           tag_name: latest
           files: |
-            smo-cheatsheet.pdf
+            main.pdf
