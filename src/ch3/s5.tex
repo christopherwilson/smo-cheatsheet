@@ -6,5 +6,7 @@ $\Lambda(t) = \int^t_0 \lambda(u)\, du.$
 Then $N_t$ is a Poisson $\Lambda(t)$ random variable for any $t$.
 \wc{3.5.3} $N_t - N_s$ is a Poisson random variable with parameter $\Lambda(t) -\Lambda(s) = \int^{t}_s \lambda(u)\, du.$
 \wc{3.5.5} The superpositioning and splitting properties are true for nonhomogeneous Poisson processes as well.
-\wt{3.5.6} Let $(N_t)_{t \ge 0}$ be a nonhomogeneous PP, let $X_1, X_2,\ldots, X)k$ be i.i.d variables defined by $P(X_i \le s) = \Lambda(s)/\Lambda(t),\ 0 \le s \le t$ with order statistics $X_{(i)}$. Then if $N_t = k$ is given then 
+\wt{Event Times 3.5.X} Suppose we know that $n$ events happen before $t$, and what to know the probability that $k$ events happen before $s \in [0, t]$. Then 
+$P(N_s = k| N_t = n) = \binom{n}{k} \left(\Lambda(s)/\Lambda(t) \right)^k (1- \Lambda(s)/\Lambda(t))^{n-k}$.
+\wt{3.5.6} Let $(N_t)_{t \ge 0}$ be a nonhomogeneous PP, let $X_1, X_2,\ldots, X_k)$ be i.i.d variables defined by $P(X_i \le s) = \Lambda(s)/\Lambda(t),\ 0 \le s \le t$ with order statistics $X_{(i)}$. This means $f_{X_i}(s) = \lambda(s)/\Lambda(t)$. Then if $N_t = k$ is given then 
 $(S_1, S_2, \ldots, S_k) \sim (X_{(1)},X_{(2)},\ldots,X_{(k)})$.
