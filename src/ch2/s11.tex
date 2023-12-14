@@ -1,3 +1,4 @@
+\subsubsection*{First Passage Probabilities \& Times}
 \wde{$\hat{T}_A$ 2.11.X} Let $A \subset S$. Then the first passage time of a chain to a set is $\Hat{T}_A = \min\{n \ge 0: X_n \in A\}$.
 \wt{2.11.1} Let $A, B \subset S$, with $A \cap B = \emptyset$ and $P(\min\{\hat{T}_A, \hat{T}_B\} < \infty | X_0 = i) = 1$ for all $i$. Then the probability $h_i = P(\hat{T}_A < \hat{T}_B | X_0 = i)$ of reaching set $A$ before set $B$ when starting from state $i$ satisfies: $h_i = 0$ if $i \in B$; $h_i  = 1$ if $i \in A$; $h_i = \sum_{j \in S} p_{ij}h_j$ if $i \in S \setminus (A \cup B)$.
 \wt{2.11.2} Let $A \subset S$, with $P(\hat{T}_A < \infty | X_0 = i) = 1$ for all $i$. Then the mean time $g_i = E(\hat{T}_A | X_0 = i)$ to reach set $A$ when starting from state $i$ satisfies: $g_i = 0$ if $i \in A$; $1 + \sum_{j \in S} p_{ij}g_j$ if $i \in S \setminus A$.

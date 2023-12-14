@@ -1,3 +1,4 @@
+\subsubsection*{Transience \& Recurrence}
 \wde{Prob. of Arrival} Define $T_j = \min\{n \ge 1 : X_n = j\}$ to be the first arrival time to state $j$, and $\varrho_{ij} = P(T_j < \infty|X_0 = i) = \sum^\infty_{n=1}P(T_j = n| X_0 = i)$ be the probability of ever reaching $j$ from $i$.
 \wde{Recurrent \& Transient 2.6.1} A state $i$ is said to be recurrent if $\varrho_{ii} = 1$ and it said to be transient if $\varrho_{ii} < 1$.
 \wl{2.6.2} Let $N_i$ be the number of visits to state $i$ (including the starting visit). Then $N_i$ is infinite if $i$ is recurrent, while $N_i$ is a geometric $(1- \varrho_{ii})$ random variable if $i$ is transient. Consequently $P(N_i = \infty|X_0 = i) = 1$ if $i$ is recurrent and $= 0$ if $i$ is transient, and the mean number of visits to $i$ is $E(N_i|X_0 = i) = \infty$ if $i$ is recurrent, and $=\!^1/_{(1-\varrho_{ii})}$ if $i$ is transient.
